@@ -1,0 +1,6 @@
+$users=get-content c:\users.txt
+foreach ($user in $users) {
+    Set-MsolUser -UserPrincipalName $user -UsageLocation US
+    Set-MsolUserLicense -UserPrincipalName $user -AddLicenses "SomeCorp:ENTERPRISEPACK"
+
+    
