@@ -7,4 +7,4 @@
     --confuser="_profilesyncer" \
     --confpassword="confs3cret" \
     admin -v
-admin set profile: {:position=>"Admin role account", :phone=>"(415) 123-4567", :fullname=>"Admin User", :description=>"IT", :username=>"admin", :email=>"admin@example.ds", :location=>"Office location field, somewhere in australia, tasmania, tasmania2, zipcode 1, Australia"}
+admin set profile: {:position=>"Admin role account", :phone=>"(415) 123-4567", :fullname=>"Admin User", :description
