@@ -1,0 +1,10 @@
+/sync_ad_confluence.rb \
+    --ldaphost "example.ds" \
+    --binddn="CN=Service Account for LDAP search and Bind,OU=SERVICE ACCOUNTS,OU=ADMIN,DC=example,DC=ds" \
+    --bindpassword="s3cret" \
+    --basedn="OU=ADMIN,DC=example,dc=ds" \
+    --confbaseurl="http://wiki.example.ds" \
+    --confuser="_profilesyncer" \
+    --confpassword="confs3cret" \
+    admin -v
+admin set profile: {:position=>"Admin role account", :phone=>"(415) 123-4567", :fullname=>"Admin User", :description=>"IT", :username=>"admin", :email=>"admin@example.ds", :location=>"Office location field, somewhere in australia, tasmania, tasmania2, zipcode 1, Australia"}
